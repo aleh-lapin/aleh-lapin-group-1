@@ -1,0 +1,140 @@
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/Person.class size 4966
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/XmlEntity.class size 1496
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument$Factory.class size 4983
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument.class size 1424
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument$1.class size 704
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:125 -  Jar entry schemaorg_apache_xmlbeans/system/sB34809A919E0F42E6E4DB2B93C47EFE7/TypeSystemHolder.class size 2054
+2014-10-05 22:07:57 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/PersonDocumentImpl.class size 1693
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/PersonDocumentImpl$PersonImpl.class size 9240
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument$Person.class size 3675
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Nationality$Enum.class size 1432
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Genre$Enum.class size 1247
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/FirstNameImpl.class size 360
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/FirstName.class size 1130
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/SurNameImpl.class size 356
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/SurName.class size 1118
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/LastNameImpl.class size 358
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/LastName.class size 1124
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/GenreImpl.class size 363
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Genre.class size 1653
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/NationalityImpl.class size 375
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Nationality.class size 1935
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/Address.class size 3366
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument$Factory.class size 5023
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument.class size 1448
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument$1.class size 713
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry schemaorg_apache_xmlbeans/system/s2880584261FE8C5E8961B46CCCF73AA6/TypeSystemHolder.class size 2054
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/AddressDocumentImpl.class size 1716
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/AddressDocumentImpl$AddressImpl.class size 3563
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument$Address.class size 1826
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/TelephonesImpl.class size 2704
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/Telephones.class size 1604
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/TelephoneImpl.class size 2067
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/Telephone.class size 1633
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/TelephoneNumber.class size 1171
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/TelephoneType$Enum.class size 1361
+2014-10-05 22:07:58 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/Person.class size 4966
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/XmlEntity.class size 1496
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument$Factory.class size 4983
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument.class size 1424
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument$1.class size 704
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry schemaorg_apache_xmlbeans/system/sB34809A919E0F42E6E4DB2B93C47EFE7/TypeSystemHolder.class size 2054
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/PersonDocumentImpl.class size 1693
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/PersonDocumentImpl$PersonImpl.class size 9240
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/PersonDocument$Person.class size 3675
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Nationality$Enum.class size 1432
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Genre$Enum.class size 1247
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/FirstNameImpl.class size 360
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/FirstName.class size 1130
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/SurNameImpl.class size 356
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/SurName.class size 1118
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/LastNameImpl.class size 358
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/LastName.class size 1124
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/GenreImpl.class size 363
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Genre.class size 1653
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/impl/NationalityImpl.class size 375
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/person/Nationality.class size 1935
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/Address.class size 3366
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument$Factory.class size 5023
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument.class size 1448
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument$1.class size 713
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry schemaorg_apache_xmlbeans/system/s2880584261FE8C5E8961B46CCCF73AA6/TypeSystemHolder.class size 2054
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/AddressDocumentImpl.class size 1716
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/AddressDocumentImpl$AddressImpl.class size 3563
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/AddressDocument$Address.class size 1826
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/TelephonesImpl.class size 2704
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/Telephones.class size 1604
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/impl/TelephoneImpl.class size 2067
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/Telephone.class size 1633
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/TelephoneNumber.class size 1171
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:125 -  Jar entry com/jmpClassloadin/xml/bind/address/TelephoneType$Enum.class size 1361
+2014-10-05 22:09:05 INFO  JarEntryClassLoader:145 -  was found 

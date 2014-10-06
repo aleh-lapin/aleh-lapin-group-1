@@ -1,0 +1,9 @@
+<add:Address xmlns:add="http://jmp-classloadin.com/xml/bind/Address">
+  <add:country>Belarus</add:country>
+  <add:city>Gomel</add:city>
+  <add:district>Sovetcky</add:district>
+  <add:telephones>
+    <!--1 or more repetitions:-->
+    <add:telephone telephone-type="MOBILE">357-86-70</add:telephone>
+  </add:telephones>
+</add:Address>
