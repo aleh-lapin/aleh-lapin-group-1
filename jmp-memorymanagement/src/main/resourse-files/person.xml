@@ -1,0 +1,10 @@
+<per:Person ID="10" xmlns:per="http://jmp-classloadin.com/xml/bind/Person">
+  <per:first-name>Andrey</per:first-name>
+  <per:sur-name>Igorevich</per:sur-name>
+  <per:last-name>Makarencko</per:last-name>
+  <per:birth-date>1972-09-29</per:birth-date>
+  <!--1 or more repetitions:-->
+  <per:work-place>GSKTB</per:work-place>
+  <per:genre>M</per:genre>
+  <per:nationality>be</per:nationality>
+</per:Person>
