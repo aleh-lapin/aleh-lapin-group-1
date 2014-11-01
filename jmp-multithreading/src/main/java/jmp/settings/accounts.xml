@@ -1,0 +1,543 @@
+<acc:Accounts xmlns:acc="http://jmp-classloadin.com/xml/bind/Accounts" xmlns:per="http://jmp-classloadin.com/xml/bind/Person" xmlns:add="http://jmp-classloadin.com/xml/bind/Address">
+	<!--1 or more repetitions:-->
+	<acc:Account ID="1">
+		<acc:person ID="1">
+			<per:first-name>Person1</per:first-name>
+			<per:sur-name>Person surname1</per:sur-name>
+			<per:last-name>Person lastname1</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person1</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry1</add:country>
+				<add:city>City1</add:city>
+				<add:district>District1</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">125 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">12 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 12 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">12556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">1000.00</acc:credit>
+		<acc:debit curr="RU">1000.00</acc:debit>
+		<acc:ballance curr="UK">1000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="2">
+		<acc:person ID="2">
+			<per:first-name>Person2</per:first-name>
+			<per:sur-name>Person surname2</per:sur-name>
+			<per:last-name>Person lastname2</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person2</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry2</add:country>
+				<add:city>City2</add:city>
+				<add:district>District2</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">225 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">22 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 22 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">22556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">2000.00</acc:credit>
+		<acc:debit curr="RU">2000.00</acc:debit>
+		<acc:ballance curr="UK">2000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="3">
+		<acc:person ID="3">
+			<per:first-name>Person3</per:first-name>
+			<per:sur-name>Person surname3</per:sur-name>
+			<per:last-name>Person lastname3</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person3</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry3</add:country>
+				<add:city>City3</add:city>
+				<add:district>District3</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">325 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">32 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 32 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">32556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">3000.00</acc:credit>
+		<acc:debit curr="RU">3000.00</acc:debit>
+		<acc:ballance curr="UK">3000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="4">
+		<acc:person ID="4">
+			<per:first-name>Person4</per:first-name>
+			<per:sur-name>Person surname4</per:sur-name>
+			<per:last-name>Person lastname4</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person4</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry4</add:country>
+				<add:city>City4</add:city>
+				<add:district>District4</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">425 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">42 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 42 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">42556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">4000.00</acc:credit>
+		<acc:debit curr="RU">4000.00</acc:debit>
+		<acc:ballance curr="UK">4000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="5">
+		<acc:person ID="5">
+			<per:first-name>Person5</per:first-name>
+			<per:sur-name>Person surname5</per:sur-name>
+			<per:last-name>Person lastname5</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person5</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry5</add:country>
+				<add:city>City5</add:city>
+				<add:district>District5</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">525 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">52 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 52 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">52556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">5000.00</acc:credit>
+		<acc:debit curr="RU">5000.00</acc:debit>
+		<acc:ballance curr="UK">5000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="6">
+		<acc:person ID="6">
+			<per:first-name>Person6</per:first-name>
+			<per:sur-name>Person surname6</per:sur-name>
+			<per:last-name>Person lastname6</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person6</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry6</add:country>
+				<add:city>City6</add:city>
+				<add:district>District6</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">625 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">62 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 62 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">62556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">6000.00</acc:credit>
+		<acc:debit curr="RU">6000.00</acc:debit>
+		<acc:ballance curr="UK">6000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="7">
+		<acc:person ID="7">
+			<per:first-name>Person7</per:first-name>
+			<per:sur-name>Person surname7</per:sur-name>
+			<per:last-name>Person lastname7</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person7</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry7</add:country>
+				<add:city>City7</add:city>
+				<add:district>District7</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">725 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">72 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 72 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">72556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">7000.00</acc:credit>
+		<acc:debit curr="RU">7000.00</acc:debit>
+		<acc:ballance curr="UK">7000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="8">
+		<acc:person ID="8">
+			<per:first-name>Person8</per:first-name>
+			<per:sur-name>Person surname8</per:sur-name>
+			<per:last-name>Person lastname8</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person8</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry8</add:country>
+				<add:city>City8</add:city>
+				<add:district>District8</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">825 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">82 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 82 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">82556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">8000.00</acc:credit>
+		<acc:debit curr="RU">8000.00</acc:debit>
+		<acc:ballance curr="UK">8000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="9">
+		<acc:person ID="9">
+			<per:first-name>Person9</per:first-name>
+			<per:sur-name>Person surname9</per:sur-name>
+			<per:last-name>Person lastname9</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person9</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry9</add:country>
+				<add:city>City9</add:city>
+				<add:district>District9</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">925 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">92 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 92 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">92556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">9000.00</acc:credit>
+		<acc:debit curr="RU">9000.00</acc:debit>
+		<acc:ballance curr="UK">9000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="10">
+		<acc:person ID="10">
+			<per:first-name>Person10</per:first-name>
+			<per:sur-name>Person surname10</per:sur-name>
+			<per:last-name>Person lastname10</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person10</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry10</add:country>
+				<add:city>City10</add:city>
+				<add:district>District10</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1025 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">102 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 102 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">102556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">10000.00</acc:credit>
+		<acc:debit curr="RU">10000.00</acc:debit>
+		<acc:ballance curr="UK">10000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="11">
+		<acc:person ID="11">
+			<per:first-name>Person11</per:first-name>
+			<per:sur-name>Person surname11</per:sur-name>
+			<per:last-name>Person lastname11</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person11</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry11</add:country>
+				<add:city>City11</add:city>
+				<add:district>District11</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1125 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">112 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 112 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">112556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">11000.00</acc:credit>
+		<acc:debit curr="RU">11000.00</acc:debit>
+		<acc:ballance curr="UK">11000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="12">
+		<acc:person ID="12">
+			<per:first-name>Person12</per:first-name>
+			<per:sur-name>Person surname12</per:sur-name>
+			<per:last-name>Person lastname12</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person12</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry12</add:country>
+				<add:city>City12</add:city>
+				<add:district>District12</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1225 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">122 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 122 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">122556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">12000.00</acc:credit>
+		<acc:debit curr="RU">12000.00</acc:debit>
+		<acc:ballance curr="UK">12000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="13">
+		<acc:person ID="13">
+			<per:first-name>Person13</per:first-name>
+			<per:sur-name>Person surname13</per:sur-name>
+			<per:last-name>Person lastname13</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person13</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry13</add:country>
+				<add:city>City13</add:city>
+				<add:district>District13</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1325 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">132 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 132 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">132556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">13000.00</acc:credit>
+		<acc:debit curr="RU">13000.00</acc:debit>
+		<acc:ballance curr="UK">13000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="14">
+		<acc:person ID="14">
+			<per:first-name>Person14</per:first-name>
+			<per:sur-name>Person surname14</per:sur-name>
+			<per:last-name>Person lastname14</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person14</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry14</add:country>
+				<add:city>City14</add:city>
+				<add:district>District14</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1425 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">142 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 142 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">142556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">14000.00</acc:credit>
+		<acc:debit curr="RU">14000.00</acc:debit>
+		<acc:ballance curr="UK">14000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="15">
+		<acc:person ID="15">
+			<per:first-name>Person15</per:first-name>
+			<per:sur-name>Person surname15</per:sur-name>
+			<per:last-name>Person lastname15</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person15</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry15</add:country>
+				<add:city>City15</add:city>
+				<add:district>District15</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1525 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">152 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 152 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">152556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">15000.00</acc:credit>
+		<acc:debit curr="RU">15000.00</acc:debit>
+		<acc:ballance curr="UK">15000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="16">
+		<acc:person ID="16">
+			<per:first-name>Person16</per:first-name>
+			<per:sur-name>Person surname16</per:sur-name>
+			<per:last-name>Person lastname16</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person16</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry16</add:country>
+				<add:city>City16</add:city>
+				<add:district>District16</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1625 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">162 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 162 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">162556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">16000.00</acc:credit>
+		<acc:debit curr="RU">16000.00</acc:debit>
+		<acc:ballance curr="UK">16000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="17">
+		<acc:person ID="17">
+			<per:first-name>Person17</per:first-name>
+			<per:sur-name>Person surname17</per:sur-name>
+			<per:last-name>Person lastname17</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person17</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry17</add:country>
+				<add:city>City17</add:city>
+				<add:district>District17</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1725 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">172 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 172 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">172556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">17000.00</acc:credit>
+		<acc:debit curr="RU">17000.00</acc:debit>
+		<acc:ballance curr="UK">17000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="18">
+		<acc:person ID="18">
+			<per:first-name>Person18</per:first-name>
+			<per:sur-name>Person surname18</per:sur-name>
+			<per:last-name>Person lastname18</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person18</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry18</add:country>
+				<add:city>City18</add:city>
+				<add:district>District18</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1825 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">182 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 182 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">182556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">18000.00</acc:credit>
+		<acc:debit curr="RU">18000.00</acc:debit>
+		<acc:ballance curr="UK">18000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="19">
+		<acc:person ID="19">
+			<per:first-name>Person19</per:first-name>
+			<per:sur-name>Person surname19</per:sur-name>
+			<per:last-name>Person lastname19</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person19</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry19</add:country>
+				<add:city>City19</add:city>
+				<add:district>District19</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">1925 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">192 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 192 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">192556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">19000.00</acc:credit>
+		<acc:debit curr="RU">19000.00</acc:debit>
+		<acc:ballance curr="UK">19000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+	<acc:Account ID="20">
+		<acc:person ID="20">
+			<per:first-name>Person20</per:first-name>
+			<per:sur-name>Person surname20</per:sur-name>
+			<per:last-name>Person lastname20</per:last-name>
+			<per:birth-date>2008-09-28</per:birth-date>
+			<per:work-place>Work place of person20</per:work-place>
+			<per:genre>W</per:genre>
+			<per:nationality>ru</per:nationality>
+			<per:address>
+				<add:country>Contry20</add:country>
+				<add:city>City20</add:city>
+				<add:district>District20</add:district>
+				<add:telephones>
+					<add:telephone telephone-type="WORK">2025 566 545</add:telephone>
+					<add:telephone telephone-type="HOME">202 56 54</add:telephone>
+					<add:telephone telephone-type="MOBILE">375 202 56 55</add:telephone>
+					<add:telephone telephone-type="VoIP">202556</add:telephone>
+				</add:telephones>
+			</per:address>
+		</acc:person>
+		<acc:credit curr="EU">20000.00</acc:credit>
+		<acc:debit curr="RU">20000.00</acc:debit>
+		<acc:ballance curr="UK">20000.00</acc:ballance>
+		<acc:last-updated-date>2009-05-16T09:59:28</acc:last-updated-date>
+		<acc:active>true</acc:active>
+	</acc:Account>
+</acc:Accounts>

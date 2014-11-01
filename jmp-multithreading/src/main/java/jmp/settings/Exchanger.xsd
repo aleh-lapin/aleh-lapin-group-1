@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema 
+	xmlns:exchanger="http://jmp-classloadin.com/xml/bind/Exchanger" 
+	xmlns:currency="http://jmp-classloadin.com/xml/bind/Currency" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://jmp-classloadin.com/xml/bind/Exchanger" 
+    elementFormDefault="qualified">
+
+	<xs:import namespace="http://jmp-classloadin.com/xml/bind/Currency" schemaLocation="currency.xsd"/>
+	
+	<xs:complexType name="exchangerType">
+		<xs:sequence>
+			<xs:element name="Course" minOccurs="1" maxOccurs="unbounded" type="currency:currency" />
+		</xs:sequence>
+		<xs:attribute name="BASIC_CURRENCY" type="currency:currencyType" use="required" />
+		<xs:attribute name="BANK-REF" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:element name="Exchanger" type="exchanger:exchangerType" />
+
+</xs:schema>

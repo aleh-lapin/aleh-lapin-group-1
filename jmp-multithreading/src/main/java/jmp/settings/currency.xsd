@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema 
+	xmlns:currency="http://jmp-classloadin.com/xml/bind/Currency" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://jmp-classloadin.com/xml/bind/Currency" 
+    elementFormDefault="qualified">
+
+	<xs:simpleType name="money">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="currencyType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="US" />
+			<xs:enumeration value="EU" />
+			<xs:enumeration value="RU" />
+			<xs:enumeration value="UK" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="currency">
+		<xs:simpleContent>
+			<xs:extension base="currency:money">
+				<xs:attribute name="curr" type="currency:currencyType" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+</xs:schema>
