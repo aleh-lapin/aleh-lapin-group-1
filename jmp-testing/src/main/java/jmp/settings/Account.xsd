@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xs:schema 
+	xmlns:accounts="http://jmp-classloadin.com/xml/bind/Accounts" 
+    xmlns:person="http://jmp-classloadin.com/xml/bind/Person" 
+	xmlns:currency="http://jmp-classloadin.com/xml/bind/Currency" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://jmp-classloadin.com/xml/bind/Accounts" 
+    elementFormDefault="qualified">
+
+	<xs:import namespace="http://jmp-classloadin.com/xml/bind/Person" schemaLocation="Person.xsd"/>
+	<xs:import namespace="http://jmp-classloadin.com/xml/bind/Currency" schemaLocation="currency.xsd"/>
+
+	<xs:complexType  name="Account">
+		<xs:sequence>
+			<xs:element name="person" minOccurs="1" maxOccurs="1" type="person:Person" />
+			<xs:element name="credit" minOccurs="1" maxOccurs="1" type="currency:currency" />
+			<xs:element name="debit" minOccurs="1" maxOccurs="1" type="currency:currency" />
+			<xs:element name="ballance" minOccurs="1" maxOccurs="1" type="currency:currency" />
+			<xs:element name="last-updated-date" minOccurs="1" maxOccurs="1" type="xs:dateTime" />
+			<xs:element name="active" minOccurs="1" maxOccurs="1" type="xs:boolean" />
+		</xs:sequence>         
+		<xs:attribute name="ID" type="xs:long" use="required" />
+	</xs:complexType>
+
+	<xs:element name="Accounts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Account" minOccurs="1" maxOccurs="unbounded" type="accounts:Account" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

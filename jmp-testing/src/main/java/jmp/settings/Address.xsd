@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema 
+    xmlns:address="http://jmp-classloadin.com/xml/bind/Address" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://jmp-classloadin.com/xml/bind/Address" 
+    elementFormDefault="qualified">
+
+	<xs:simpleType name="telephoneType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="WORK" />
+			<xs:enumeration value="HOME" />
+			<xs:enumeration value="MOBILE" />
+			<xs:enumeration value="VoIP" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="telephoneNumber">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9 ]+"/>
+			<xs:minLength value="5"/>
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="telephone">
+		<xs:simpleContent>
+			<xs:extension base="address:telephoneNumber">
+				<xs:attribute name="telephone-type" type="address:telephoneType" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="telephones">
+		<xs:sequence>
+			<xs:element name="telephone" minOccurs="1" maxOccurs="unbounded" type="address:telephone" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Address">
+		<xs:sequence>
+			<xs:element name="country" minOccurs="1" maxOccurs="1" type="xs:string" />
+			<xs:element name="city" minOccurs="1" maxOccurs="1" type="xs:string" />
+			<xs:element name="district" minOccurs="1" maxOccurs="1" type="xs:string" />
+			<xs:element name="telephones" minOccurs="1" maxOccurs="1" type="address:telephones" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,6 @@
+<exc:Exchanger BASIC_CURRENCY="RU" BANK-REF="SBER-BANK" xmlns:exc="http://jmp-classloadin.com/xml/bind/Exchanger">
+  <!--1 or more repetitions:-->
+  <exc:Course curr="US">1000.00</exc:Course>
+  <exc:Course curr="EU">1000.00</exc:Course>
+  <exc:Course curr="UK">1000.00</exc:Course>
+</exc:Exchanger>
