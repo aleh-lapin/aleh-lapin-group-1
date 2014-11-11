@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html"/>
+<title>form validation</title>
+<style type="text/css">
+@import "style.css";
+</style>
+<!--<script  src = "jquery-1.4.2.min.js"></script>-->
+</head>
+<body>
+<div id = "wrapper">
+<form name="customForm" action="POST">
+<fieldset>
+	<legend>форма регистрации</legend>
+	<div>
+	<label for="name">ФИО</label>
+	<input name="name" type="text" required autofocus placeholder="Введите фио" pattern="\w{3,}" title="The field name can not be less than 3 characters" />
+	</div>
+	<div>
+	<label for="email">email</label>
+	<input name="email" type="email" required autocomplete="off" multiple />
+	</div>
+	<div>
+	<label for="phonenumber">номер телефона</label>
+	<input name="phonenumber" type="tel" required pattern="[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx xxx-xx-xx" />
+	</div>
+	<div>
+	<label for="website">веб-сайт</label>
+	<input name="website" type="url" />
+	</div>
+	<div>
+	<label for="dateofbirth">дата рождения</label>
+	<input name="dateofbirth" type="date" />
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Параметры доставки</legend>
+	<div>
+	<label for="countries">Страна</label>
+	<input name="countries" list="country" />
+	<datalist id="country">
+		<option value="belarus"></option>
+		<option value="kazakhstan"></option>
+		<option value="russia"></option>
+		<option value="ukraine"></option>
+   </datalist>
+   </div>
+   <div>
+   <label for="address">Адрес</label>
+   <textarea name="address" cols="25" rows="5" wrap="soft"></textarea>
+   </div>
+   <div>
+   <label for="postindex">Почтовый индекс</label>
+   <input name="postindex" type="text" />
+   </div>
+</fieldset>
+
+
+<fieldset>
+	<legend>Предпочитаемый способ получения уведомлений</legend>
+	<div>
+		<label class="radio-group"><input name="deliverytype" type="radio" value="email" />По Email</label>
+		<label class="radio-group"><input name="deliverytype" type="radio" value="telephone" />По телефону</label>
+		<label class="radio-group"><input name="deliverytype" type="radio" value="none" />Не уведомлять меня</label>
+	</div>
+	<div>
+	<label for="notifications">Кол-во уведомлений в неделю</label>
+    <input name="notifications" type="number" min="7" max="21" value="7" />
+	</div>
+</fieldset>
+<fieldset>
+	<input type="submit" value="Отправить даные" />
+</fieldset>
+</form>
+</div>
+</body>
+</html>
