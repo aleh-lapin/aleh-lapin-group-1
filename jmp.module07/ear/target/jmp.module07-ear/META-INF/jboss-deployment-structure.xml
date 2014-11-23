@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<ear-subdeployments-isolated>true</ear-subdeployments-isolated>
+	<deployment>
+		<exclusions>
+			<module name="org.jboss.resteasy.resteasy-jackson-provider" />
+			<module name="org.jboss.resteasy.resteasy-jettison-provider" />
+		</exclusions>
+
+	</deployment>
+    <sub-deployment name="jmp.module07-web.war">
+        <exclusions>
+			<module name="org.jboss.resteasy.resteasy-jackson-provider" />
+			<module name="org.jboss.resteasy.resteasy-jettison-provider" />
+		</exclusions>
+    </sub-deployment>
+</jboss-deployment-structure>

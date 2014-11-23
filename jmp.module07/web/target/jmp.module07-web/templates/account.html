@@ -1,0 +1,17 @@
+<form ng-submit="update()">
+<input type="text"
+				ng-model="accountId" />
+	<input type="button" ng-click="searchAccount()" ng-disabled="!accountId" value="Search" />
+	<ul class="list">
+		<li>Credit: <label> <input type="text"
+				ng-model="acc.credit.value" />{{acc.credit.curr}}
+		</label></li>
+		<li>Debit: <label> <input type="text"
+				ng-model="acc.debit.value" />{{acc.debit.curr}}
+		</label></li>
+		<li>Ballance: <label> <input type="text"
+				ng-model="acc.ballance.value" />{{acc.ballance.curr}}
+		</label></li>
+		<li><input type="submit" value="Update" /></li>
+	</ul>
+</form>

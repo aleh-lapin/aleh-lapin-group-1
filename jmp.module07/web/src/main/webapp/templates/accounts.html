@@ -1,0 +1,44 @@
+<table class="simpletablestyle" width="200" border="1" cellspacing="0">
+	<caption align="top">Account`s list.</caption>
+	<thead align="center" style="background: #fc0; color: black">
+		<tr>
+			<td>First name</td>
+			<td>Surname</td>
+			<td>last name</td>
+			<td>Birth date</td>
+			<td>Work places</td>
+			<td>Genre</td>
+			<td>Nationality</td>
+			<td>Country</td>
+			<td>City</td>
+			<td>District</td>
+			<td>Telephones</td>
+			<td>Credit</td>
+			<td>Debit</td>
+			<td>Ballance</td>
+			<td>Last updated date</td>
+		</tr>
+	</thead>
+
+	<tbody align="right">
+		<tr ng-repeat="account in accounts">
+			<td>{{account.person.firstName}}</td>
+			<td>{{account.person.surName}}</td>
+			<td>{{account.person.lastName}}</td>
+			<td>{{account.person.birthDate}}</td>
+			<td ng-bind="account.person.workPlace.join(', ')"></td>
+			<td>{{account.person.genre}}</td>
+			<td>{{account.person.nationality}}</td>
+			<td>{{account.person.address.country}}</td>
+			<td>{{account.person.address.city}}</td>
+			<td>{{account.person.address.district}}</td>
+			<td><span
+				ng-repeat="tel in account.person.address.telephones.telephones">
+					{{tel.value}} {{tel.telephoneType}} </span></td>
+			<td>{{account.credit.value}} {{account.credit.curr}}</td>
+			<td>{{account.debit.value}} {{account.debit.curr}}</td>
+			<td>{{account.ballance.value}} {{account.ballance.curr}}</td>
+			<td>{{account.lastUpdatedDate}}</td>
+		</tr>
+	</tbody>
+</table>

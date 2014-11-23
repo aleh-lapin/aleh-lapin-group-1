@@ -1,0 +1,8 @@
+<form ng-submit="update()">
+	<ul class="list">
+		<li ng-repeat="ex in exchanger.course"><label>{{ex.curr}}
+				<input type="text" ng-model="ex.value" />
+		</label></li>
+		<li><input type="submit" value="Update" /></li>
+	</ul>
+</form>

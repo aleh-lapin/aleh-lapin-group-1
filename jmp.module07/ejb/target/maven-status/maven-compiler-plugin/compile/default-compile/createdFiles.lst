@@ -1,0 +1,8 @@
+jmp\module07\ejb\services\exchanger\ExchangerManager.class
+jmp\module07\ejb\services\exchanger\Exchanger.class
+jmp\module07\ejb\services\exchanger\ExchangerManagerBean.class
+jmp\module07\ejb\services\account\AccountManagerBean.class
+jmp\module07\ejb\services\exchanger\ExchangerManagerLocal.class
+jmp\module07\ejb\services\account\AccountManagerLocal.class
+jmp\module07\ejb\services\account\Account.class
+jmp\module07\ejb\services\account\AccountManager.class
