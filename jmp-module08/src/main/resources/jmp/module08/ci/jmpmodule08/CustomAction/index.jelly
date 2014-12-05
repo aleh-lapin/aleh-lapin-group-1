@@ -1,0 +1,30 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+	<l:layout title="Participant`s list">
+    <l:main-panel>
+       	<h1>Result of building process</h1>
+       	<br/>
+       	<div>
+       	<j:choose>
+	       	<j:when test="${it.metrics.size() == 0}">
+	       		There are no active participants involved in that build.
+	       	</j:when>
+	       	<j:otherwise>
+	       		<table style="width:50%">
+	       		<tr><td align="left">Build duration</td>
+	       		<td align="left">Build name</td>
+	       		<td align="left">Build status</td></tr>
+          		<j:forEach var="metric" items="${it.metrics}">
+          			<tr><td>
+        			<span>${metric.buildDuration}</span></td>
+        			<td><span>${metric.displayName}</span></td>
+        			<td><span>${metric.result}</span>
+        			</td></tr>  
+          		</j:forEach>
+          		</table>
+	       	</j:otherwise>
+	    </j:choose>	       	
+       	</div>
+	</l:main-panel>
+  	</l:layout>
+</j:jelly>
