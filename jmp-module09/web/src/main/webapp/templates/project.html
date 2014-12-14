@@ -1,0 +1,35 @@
+<div style="margin: 0;padding: 0; overflow:hidden;width:100%">
+	<div style="float: left; width: 60%">
+		<table class="simpletablestyle" width="100%" border="1"
+			cellspacing="0">
+			<caption align="top">Project`s list.</caption>
+			<thead align="center" style="background: #fc0; color: black">
+				<tr>
+					<td>Project identity</td>
+					<td>Project name</td>
+				</tr>
+			</thead>
+
+			<tbody align="right">
+				<tr ng-repeat="project in projects">
+					<td>{{project.id}}</td>
+					<td>{{project.name}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<div style="float: left; width: 40%;margin-top:65px">
+		<form ng-submit="process()">
+			<fieldset>
+				<legend>Create new project</legend>
+				<label for="identity">Project identity:</label><input type="text" name="identity" ng-model="projectId" /> <br/><br/>
+				<input type="button" ng-click="searchProject()" ng-disabled="!projectId" value="Search" /><br/><br/>
+				<label >Project name:</label><input type="text" ng-model="newProject.name" /></label><br/><br/>
+				<input type="submit" value="{{{true:'Update', false:'Create'}[isSearch]}}" /><input type="button" value="Cancel" ng-disabled="!projectId" ng-click="cancel()" /><br/><br/>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+

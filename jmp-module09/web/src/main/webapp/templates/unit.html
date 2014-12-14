@@ -1,0 +1,42 @@
+<div style="margin: 0;padding: 0; overflow:hidden;width:100%">
+	<div style="float: left; width: 60%">
+		<table class="simpletablestyle" width="100%" border="1"
+			cellspacing="0">
+			<caption align="top">Unit`s list.</caption>
+			<thead align="center" style="background: #fc0; color: black">
+				<tr>
+					<td>Unit idnetity</td>
+					<td>Unit type</td>
+				</tr>
+			</thead>
+
+			<tbody align="right">
+				<tr ng-repeat="unit in units">
+					<td>{{unit.id}}</td>
+					<td>{{unit.unitType}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<div style="float: left; width: 40%;margin-top:65px">
+		<form ng-submit="process()">
+			<fieldset>
+				<legend>Create new unit</legend>
+				<label for="identity">Unit identity:</label><input type="text" name="identity" ng-model="unitId" /> <br/><br/>
+				<input type="button" ng-click="searchUnit()" ng-disabled="!unitId" value="Search" /><br/><br/>
+				<label for="identity">Unit name:</label>
+				<select ng-model="newUnit.unitType">
+					<option value="">Choose Unit type</option>
+					<option value="QUALITY_ASSURANCE">QUALITY_ASSURANCE</option>
+					<option value="DEVEPOPING_TEAM">DEVEPOPING_TEAM</option>
+					<option value="HELP_DESK_TEAM">HELP_DESK_TEAM</option>
+					<option value="SERVICE_TEAM">SERVICE_TEAM</option>
+				</select> <br/><br/> 
+				<input type="submit" value="{{{true:'Update', false:'Create'}[isSearch]}}" /><input type="button" value="Cancel" ng-disabled="!unitId" ng-click="cancel()" /><br/><br/>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+

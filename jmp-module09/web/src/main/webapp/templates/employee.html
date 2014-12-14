@@ -1,0 +1,92 @@
+<div style="margin: 0;padding: 0; overflow:hidden;width:100%">
+	<div style="float: left; width: 80%;margin-top:65px">
+		<form ng-submit="process()">
+			<fieldset>
+				<legend>Create new employee</legend>
+				<label>Employee identity:</label><input type="text" name="identity" ng-model="employeeId" /></label> <br/><br/>
+				<input type="button" ng-click="searchEmployee()" ng-disabled="!employeeId" value="Search" /><br/><br/>
+				<label>Employee first name:
+				<input type="text" ng-model="newEmployee.person.firstName" />
+				</label>
+				<label>Employee sur name:
+				<input type="text" ng-model="newEmployee.person.surName" />
+				</label>
+				<label>Employee last name:
+				<input type="text" ng-model="newEmployee.person.lastName" />
+				</label>
+				<label>Employee birth date:
+				<input type="date" ng-model="newEmployee.person.birthDate" />
+				</label>
+				<label>Employee workplace:
+				<input type="text" ng-model="newEmployee.person.workPlace" />
+				</label>
+				<label>Employee genre:
+				<select ng-model="newEmployee.person.genre">
+					<option value="">Choose Employee genre</option>
+					<option value="U">U</option>
+					<option value="M">M</option>
+					<option value="W">W</option>
+				</select> </label>
+				<label>Employee nationality:
+				<select ng-model="newEmployee.person.nationality">
+					<option value="">Choose Employee genre</option>
+					<option value="BE">BE</option>
+					<option value="RU">RU</option>
+					<option value="US">US</option>
+					<option value="EN">EN</option>
+					<option value="ZH">ZH</option>
+					<option value="BG">BG</option>
+				</select> </label>
+				<label>Employee email:
+				<input type="email" ng-model="newEmployee.person.email" />
+				</label>
+				
+				<span ng-repeat="address in newEmployee.person.addresses">
+				<label>Employee country:
+				<input type="text" ng-model="address.country" />
+				</label>
+				<label>Employee city:
+				<input type="text" ng-model="address.city" />
+				</label>
+				<label>Employee district:
+				<input type="text" ng-model="address.district" />
+				</label>
+				<span ng-repeat="tel in address.telephones">
+				<label>Telephone :
+				<input type="text" ng-model="tel.value" />
+				</label>
+				<label>Telephone type:
+				<input type="text" ng-model="tel.telephoneType" />
+				</label>
+				</span>
+				</span>
+				
+				<label>Employee status:
+				<select ng-model="newEmployee.employeeStatus">
+					<option value="">Choose Employee genre</option>
+					<option value="BILLABLE">BILLABLE</option>
+					<option value="FULL_TIME">FULL_TIME</option>
+					<option value="PART_TIME">PART_TIME</option>
+					<option value="STUDENT">STUDENT</option>
+				</select> </label> 
+				
+				<label>Employee unit: <select
+					ng-model="unit" ng-options="unit.unitType for unit in units">
+						<option value="">Choose Unit</option>
+				</select>
+				</label> 
+				
+				<label>Employee project: <select
+					ng-model="project"
+					ng-options="project.name for project in pros">
+						<option value="">Choose Project</option>
+				</select>
+				</label> <br/><br/> 
+				
+				<input type="submit" value="{{{true:'Update', false:'Create'}[isSearch]}}" /><input type="button" value="Cancel" ng-disabled="!employeeId" ng-click="cancel()" /><br/><br/>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+
