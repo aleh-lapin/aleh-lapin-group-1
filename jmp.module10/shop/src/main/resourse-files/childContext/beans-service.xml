@@ -33,6 +33,8 @@
 
 	<bean id="userService" class="org.shop.api.impl.UserServiceImpl"
 		p:repository-ref="userRepository" />
+		
+	<alias name="userService" alias="aliasUserService" />
 
 	<bean id="proposalService" class="org.shop.api.impl.ProposalServiceImpl"
 		p:sellerService-ref="sellerService" p:productService-ref="productService">

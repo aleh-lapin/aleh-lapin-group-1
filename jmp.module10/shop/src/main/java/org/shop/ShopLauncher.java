@@ -10,6 +10,7 @@ import org.shop.api.OrderService;
 import org.shop.api.ProductService;
 import org.shop.api.ProposalService;
 import org.shop.api.SellerService;
+import org.shop.api.UserService;
 import org.shop.data.Item;
 import org.shop.data.Order;
 import org.shop.data.Product;
@@ -69,13 +70,17 @@ public class ShopLauncher {
 		ApplicationContext applicationContext = loader.getApplicationContext();
 		DataInitializer dataInitializer = applicationContext.getBean(DataInitializer.class);
 		OrderService orderService = applicationContext.getBean(OrderService.class);
-				
+		
+		UserService userService = (UserService)applicationContext.getBean("aliasUserService");
+		User user = userService.getUserById(1L);
+		LOG.info("User : " + user);
+		
 		Long orderId = orderService.createOrder(createUser(), createItem());
 		LOG.info("Order id: " + orderId);
 		Order order = orderService.getOrderById(orderId);
 		LOG.info("Order : " + order);
 		
-		ItemService itemService = applicationContext.getBean(ItemService.class);
+		ItemService itemService = (ItemService)applicationContext.getBean("itemService");
 		
 		Long itemId = itemService.createItem(createItem());
 		LOG.info("Item id: " + itemId);
@@ -83,7 +88,7 @@ public class ShopLauncher {
 		for(Item item : items)
 			LOG.info("Item" + item);
 		
-		ProductService productService = applicationContext.getBean(ProductService.class);
+		ProductService productService = applicationContext.getBean("productService", ProductService.class);
 		
 		Long productId = productService.createProduct(createProduct());
 		LOG.info("Product id: " + itemId);
