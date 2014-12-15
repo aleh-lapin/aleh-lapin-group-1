@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="sellerInitializer" class="org.shop.SellerInitializer"
+		p:sellerService-ref="sellerService" depends-on="sellerService">
+		<constructor-arg index="0">
+			<ref local="sellerNames" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="proposalInitializer" class="org.shop.ProposalInitializer"
+		autowire="byName" />
+
+	<bean id="userInitializer" class="org.shop.UserInitializer"
+		depends-on="userService">
+		<constructor-arg index="0">
+			<ref bean="userService" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="productInitializer" class="org.shop.ProductInitializer"
+		depends-on="productService">
+		<constructor-arg>
+			<ref bean="productService" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="dataInitializer" class="org.shop.DataInitializer"
+		init-method="initData">
+		<property name="sellerInitializer">
+			<ref local="sellerInitializer" />
+		</property>
+		<property name="productInitializer">
+			<ref local="productInitializer" />
+		</property>
+		<property name="proposalInitializer">
+			<ref local="proposalInitializer" />
+		</property>
+		<property name="userInitializer">
+			<ref local="userInitializer" />
+		</property>
+	</bean>
+
+	<util:map id="sellerNames" map-class="java.util.HashMap">
+		<entry key="0">
+			<value>Peter</value>
+		</entry>
+		<entry key="1">
+			<value>Ram</value>
+		</entry>
+		<entry key="2">
+			<value>Nick</value>
+		</entry>
+		<entry key="3">
+			<value>John</value>
+		</entry>
+		<entry key="4">
+			<value>Patrick</value>
+		</entry>
+		<entry key="5">
+			<value>Robert</value>
+		</entry>
+	</util:map>
+
+</beans>

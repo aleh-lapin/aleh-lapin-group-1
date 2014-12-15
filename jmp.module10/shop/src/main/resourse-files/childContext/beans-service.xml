@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-lazy-init="true">
+
+	<bean id="itemService" class="org.shop.api.impl.ItemServiceImpl"
+		depends-on="itemRepository">
+		<constructor-arg index="0">
+			<ref bean="itemRepository" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="orderService" class="org.shop.api.impl.OrderServiceImpl"
+		depends-on="orderRepository">
+		<property name="itemService">
+			<ref local="itemService" />
+		</property>
+		<property name="orderRepository">
+			<ref bean="orderRepository" />
+		</property>
+	</bean>
+
+	<bean id="sellerService" class="org.shop.api.impl.SellerServiceImpl"
+		autowire="byType" />
+
+	<bean id="productService" class="org.shop.api.impl.ProductServiceImpl"
+		autowire="constructor" />
+
+	<bean id="userService" class="org.shop.api.impl.UserServiceImpl"
+		p:repository-ref="userRepository" />
+
+	<bean id="proposalService" class="org.shop.api.impl.ProposalServiceImpl"
+		p:sellerService-ref="sellerService" p:productService-ref="productService">
+		<constructor-arg>
+			<ref bean="proposalRepository" />
+		</constructor-arg>
+	</bean>
+
+</beans>
