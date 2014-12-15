@@ -49,24 +49,14 @@
 		</property>
 	</bean>
 
+
+<util:constant static-field="org.shop.common.Sellers.SAMSUNG" id="samsung" />
+<util:constant static-field="org.shop.common.Sellers.AMAZON" id="amazon" />
 	<util:map id="sellerNames" map-class="java.util.HashMap">
-		<entry key="0">
-			<value>Peter</value>
-		</entry>
-		<entry key="1">
-			<value>Ram</value>
-		</entry>
-		<entry key="2">
-			<value>Nick</value>
-		</entry>
+		<entry key="1" value-ref="samsung" />
+		<entry key="2" value-ref="amazon" />
 		<entry key="3">
-			<value>John</value>
-		</entry>
-		<entry key="4">
-			<value>Patrick</value>
-		</entry>
-		<entry key="5">
-			<value>Robert</value>
+			<value>Apple</value>
 		</entry>
 	</util:map>
 
