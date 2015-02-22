@@ -18,6 +18,14 @@
 	</div>
 	<div id="wrapper">
 		<div id="main">
+			<c:choose>
+				<c:when test="${messages.size()>0}">
+					<c:forEach items="${messages}" var="message">
+						<em>Resource - ${message.resourceType} passed ${message.messageType} stage.<br/></em>
+					</c:forEach>
+				</c:when>
+			</c:choose>
+
 			<div id="container">
 				<h2>Tickets</h2>
 				<c:choose>

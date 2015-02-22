@@ -3,8 +3,12 @@ package jmp.module14.transaction;
 import java.util.Observable;
 import java.util.Observer;
 
+import jmp.module14.comunicate.ClientComunicator;
 import jmp.module14.data.Resource;
+import jmp.module14.message.AbortMessage;
+import jmp.module14.message.CommitMessage;
 import jmp.module14.message.Message;
+import jmp.module14.message.PreparationMessage;
 
 public class LocalTransaction implements Transaction, Observer {
 	
@@ -53,18 +57,34 @@ public class LocalTransaction implements Transaction, Observer {
 		switch(message.getMessageType()){
 			case PREPARE:
 				localThread = new Thread() {
+					
+					private ClientComunicator clientComunicator;
+					
+					{
+						clientComunicator = new ClientComunicator(1025, "localhost");
+					}
+					
 					@Override
 					public void run(){
 						while(getStatus().equals(TransactionStatus.PROCCESSED)) {
 							try {
 								System.out.println(" status " + resource.getState());
+								Message message = null;
 								Thread.sleep(100);
+								message = new PreparationMessage();
+								message.setResourceType(resource.getClass().getSimpleName());
+								clientComunicator.sendMessage(message);
 								switch(resource.getState())
 								{
 									case COMMITED:
+										message = new CommitMessage();
+										message.setResourceType(resource.getClass().getSimpleName());
+										clientComunicator.sendMessage(message);
 										status = TransactionStatus.COMMITED;
 										break;
 									case RECOVERED:
+										message = new AbortMessage();
+										message.setResourceType(resource.getClass().getSimpleName());
 										status = TransactionStatus.ABORTED;
 										break;
 									default: break;

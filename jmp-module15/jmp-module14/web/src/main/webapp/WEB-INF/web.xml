@@ -10,4 +10,8 @@
 		<welcome-file>start.jsp</welcome-file>
 	</welcome-file-list>
 
+	<listener>
+		<listener-class>jmp.module14.controller.ContextListener</listener-class>
+	</listener>
+
 </web-app>
